@@ -172,12 +172,9 @@ select
 --from nego join
 FROM
 MONTH_BY_MONTH_SALES
---(need to check if this filter is needed as we can not calculate the margin...)
--- WHERE marge_2net IS NOT NULL
 --using(sku_id)
 -- where DS_SUPPLIER_BRAND = "ALPRO" --and MONTH_BY_MONTH_SALES.EAN = "5411188132226"
 group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19--,20,21,22,23,24,25,26,27
--- having  sum(marge_magasin*CONVERSION_RATE) != safe_divide(SUM(marge_magasin*CONVERSION_RATE) , sum(turnover_margeable*CONVERSION_RATE)) * SUM(turnover_wo_taw*CONVERSION_RATE)
 --order by DS_SUPPLIER_BRAND
 -- ) WHERE marge_2net IS NOT NULL --(need to check if this filter is needed as we can not calculate the margin...)
 
