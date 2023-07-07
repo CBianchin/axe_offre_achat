@@ -1,0 +1,5 @@
+
+
+SELECT distinct ID_OFFER_FORMAT_BOX_SIZE,ID_SITE, ID_BOX_SIZE_GRP,ID_OFFER_CLASS_LVL
+FROM `auchan-ire-prod.raw_ipon_sec.SITBOXSIZE_CNT`
+
